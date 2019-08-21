@@ -129,6 +129,172 @@ $Questions = array(
         'CorrectAnswer' => 'C'
     ),
 
+    6 => array(
+        'Question' => '6. Which one is the first high level programming language',
+        'Answers' => array(
+            'A' => 'C',
+            'B' => 'COBOL',
+            'C' => 'FORTAN',
+            'D' => 'C++'
+        ),
+        'CorrectAnswer' => 'C'
+    ),
+    
+    7 => array(
+        'Question' => '7. Which one is the first word processor application',
+        'Answers' => array(
+            'A' => 'MS WORD',
+            'B' => 'APPLE i WORK',
+            'C' => 'SUN STAROFFICE',
+            'D' => 'WORDSTAR'
+        ),
+        'CorrectAnswer' => 'D'
+    ),
+    
+    8 => array(
+        'Question' => '8. Which one is the current fastest Supercomputer in India',
+        'Answers' => array(
+            'A' => 'AADITYA',
+            'B' => 'SAGA-220',
+            'C' => 'SAHASRAT',
+            'D' => 'HP APOLLO 6000'
+        ),
+        'CorrectAnswer' => 'C'
+    ),
+    
+    9 => array(
+        'Question' => '9. India"s first Super Computer PARAM 8000 was installed in',
+        'Answers' => array(
+            'A' => '1988',
+            'B' => '1991',
+            'C' => '1995',
+            'D' => '1982'
+        ),
+        'CorrectAnswer' => 'B'
+    ),
+    
+    10 => array(
+        'Question' => '10. Who developed Java Programming Language',
+        'Answers' => array(
+            'A' => 'James Gosling',
+            'B' => 'Douglas Engelbhart',
+            'C' => 'Edmund M. Clarke',
+            'D' => 'James D. Foley'
+        ),
+        'CorrectAnswer' => 'A'
+    ),
+
+    11 => array(
+        'Question' => '11. Which one is volatile memory in a computer system',
+        'Answers' => array(
+            'A' => 'HardDisk',
+            'B' => 'RAM',
+            'C' => 'ROM',
+            'D' => 'Optical Drive'
+        ),
+        'CorrectAnswer' => 'B'
+    ),
+
+    12 => array(
+        'Question' => '12. One Terabyte (1 TB) is equal to ',
+        'Answers' => array(
+            'A' => '1028GB',
+            'B' => '1012GB',
+            'C' => '1000GB',
+            'D' => '1024GB'
+        ),
+        'CorrectAnswer' => 'D'
+    ),
+
+    13 => array(
+        'Question' => '13. Who first developed QWERTY keyboard used in computers and phones',
+        'Answers' => array(
+            'A' => 'Raphael Finkel',
+            'B' => 'Wim Ebbinkhuijsen',
+            'C' => 'Shafi Goldwasser',
+            'D' => 'Christopher Latham Sholes'
+        ),
+        'CorrectAnswer' => 'D'
+    ),
+
+    14 => array(
+        'Question' => '14. Which operating system is developed and used by Apple Inc',
+        'Answers' => array(
+            'A' => 'Windows',
+            'B' => 'Android',
+            'C' => 'iOS',
+            'D' => 'UNIX'
+        ),
+        'CorrectAnswer' => 'C'
+    ),
+
+    15 => array(
+        'Question' => '15. Linus Torvalds develop which operating system',
+        'Answers' => array(
+            'A' => 'Windows',
+            'B' => 'Mac OS',
+            'C' => 'UNIX',
+            'D' => 'Linux'
+        ),
+        'CorrectAnswer' => 'D'
+    ),
+
+
+    16 => array(
+        'Question' => '16. Which one is the first search engine in internet',
+        'Answers' => array(
+            'A' => 'Google',
+            'B' => 'Archie',
+            'C' => 'Altavista',
+            'D' => 'WAIS'
+        ),
+        'CorrectAnswer' => 'B'
+    ),
+   
+    17 => array(
+        'Question' => '17. Number of bit used by the IPv6 address ',
+        'Answers' => array(
+            'A' => '32 bit',
+            'B' => '64 bit',
+            'C' => '128 bit',
+            'D' => '256 bit'
+        ),
+        'CorrectAnswer' => 'C'
+    ),
+   
+    18 => array(
+        'Question' => '18. Which one is the first web browser invented in 1990',
+        'Answers' => array(
+            'A' => 'Internet Explorer',
+            'B' => 'Mosaic',
+            'C' => 'Mozilla',
+            'D' => 'Nexus'
+        ),
+        'CorrectAnswer' => 'D'
+    ),
+   
+    19 => array(
+        'Question' => '19. Which of the following programming language is used to create programs like applets? ',
+        'Answers' => array(
+            'A' => 'COBOL',
+            'B' => 'LANGUAGE',
+            'C' => 'JAVA',
+            'D' => 'BASIC'
+        ),
+        'CorrectAnswer' => 'C'
+    ),
+   
+    20 => array(
+        'Question' => '20. First computer virus is known as ',
+        'Answers' => array(
+            'A' => 'Rabbit',
+            'B' => 'Creeper Virus',
+            'C' => 'Elk Cloner',
+            'D' => 'SCA Virus'
+        ),
+        'CorrectAnswer' => 'B'
+    ),
+
 );
 if (isset($_POST['answers'])){
     $Answers = $_POST['answers']; // Get submitted answers.
@@ -178,26 +344,11 @@ if (isset($_POST['answers'])){
         <?php } ?>
 
     <?php } ?>
-    
+    <input type="submit" class="button" value="Submit Quiz" />
     </form>
 <?php 
 }
 ?>
-<div class="next">
-    <div class="container">
-        
-            <div class="pagination">
 
-<a href="quiz.php" class="active1"  id="one">1</a>
-<a href="second.php" id="two">2</a>
-<a href="third.php"  id="three">3</a>
-<a href="fourth.php" id="four">4</a>
-
-<a href="#"><i class="fa fa-angle-right" id="right"></i></a>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
