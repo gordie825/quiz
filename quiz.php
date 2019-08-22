@@ -40,10 +40,10 @@
     <p> INFORMATION TECHNOLOGY QUIZ</p>
 
     <ul class="list-unstyled list-social">
-      <li><a href="https://www.facebook.com/sibabalo.cokile?ref=bookmarks"><i class="ion-social-facebook"></i></a></li>
-      <li><a href="https://twitter.com/Gordie_DMF"><i class="ion-social-twitter"></i></a></li>
-      <li><a href="https://www.instagram.com/gordie_dmf/?hl=en"><i class="ion-social-instagram"></i></a></li>
-      <li><a href="gordie825@gmail.com"><i class="ion-social-googleplus"></i></a></li>
+      <li><a href="https://www.facebook.com/sibabalo.cokile?ref=bookmarks" target="_blank"><i class="ion-social-facebook"></i></a></li>
+      <li><a href="https://twitter.com/Gordie_DMF" target="_blank"><i class="ion-social-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/gordie_dmf/?hl=en" target="_blank"><i class="ion-social-instagram"></i></a></li>
+      <li><a href="gordie825@gmail.com" target="_blank"><i class="ion-social-googleplus"></i></a></li>
       
     </ul>
   </div>
@@ -326,7 +326,7 @@ if (isset($_POST['answers'])){
                     echo "<h2>You failed &#x1F602 &#x1F602 &#x1F602</h2>";
                     echo '<br /><hr>'; 
                     echo "<video width='100%' height='240' controls>";
-                    echo "<source src='images/failed.mp4'>failed.mp4 type='video/mp4'>";
+                    echo "<source src='images/bad.mp4'>bad.mp4 type='video/mp4'>";
                     echo "</video>";    
                     echo ""; 
                     echo "<br>"; 
