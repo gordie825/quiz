@@ -20,7 +20,8 @@
   <link href="lib/hover/hover.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- <link href="css/style.css" rel="stylesheet" > -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <!-- <link href="css/pagination.css" rel="stylesheet" type="text/css"> -->
 
   <!-- Responsive css -->
@@ -298,7 +299,7 @@ if (isset($_POST['answers'])){
 
     foreach ($Questions as $QuestionNo => $Value){
         // Echo the question
-        echo $Value[Question];
+        echo "<h3>$Value[Question]</h3>";
 
         if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){
              echo '<h3>You answered: <span style="color: red;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br></h3>' ; // Replace style with a class
@@ -313,16 +314,16 @@ if (isset($_POST['answers'])){
                                 if ($counter=="") 
                                 { 
                                 $counter='0';
-                                $results = "Your score: $counter/20"; 
+                                $results = "<h3>Your score: $counter/20</h3>"; 
                                 }
                                 else 
                                 { 
-                                $results = "Your score: $counter/20"; 
+                                $results = "<h3>Your score: $counter/20</h3>"; 
                                 }
             }                           echo $results;
             echo '<br /><hr>'; 
              if ($counter < 10){
-                    echo "You failed";
+                    echo "<h3>You failed</h3>";
                     echo '<br /><hr>'; 
                     echo "<video width='100%' height='240' controls>";
                     echo "<source src='images/failed.mp4'>failed.mp4 type='video/mp4'>";
@@ -330,7 +331,7 @@ if (isset($_POST['answers'])){
                     echo ""; 
                     echo "<br>"; 
                 } else {
-                    echo "Well Done";
+                    echo "<h3>Well Done</h3>";
                     echo '<br /><hr>'; 
                     echo "<video width='100%' height='240' controls>";
                     echo "<source src='images/passed.mp4'>passed.mp4 type='video/mp4'>";
@@ -343,20 +344,21 @@ if (isset($_POST['answers'])){
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="quiz">
     <?php foreach ($Questions as $QuestionNo => $Value){ ?>
 
-        <h3><?php echo $Value['Question']; ?></h3>
+        <h4><?php echo $Value['Question']; ?></h4>
         <?php 
             foreach ($Value['Answers'] as $Letter => $Answer){ 
             $Label = 'question-'.$QuestionNo.'-answers-'.$Letter;
             echo '<br /><hr>'; 
         ?>
-        <div>
-            <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
+        <div> 
+            <h3>
+                <input type="radio" name="answers[<?php echo $QuestionNo; ?>]" id="<?php echo $Label; ?>" value="<?php echo $Letter; ?>" />
             <label for="<?php echo $Label; ?>"><?php echo $Letter; ?>) <?php echo $Answer; ?> </label>
-            
+            </h3>
         </div>
         <?php } ?>
 
-    <?php } ?>
+    <?php }echo '<br />';  ?>
     <input type="submit" class="button" value="Submit Quiz" />
     </form>
 <?php 
