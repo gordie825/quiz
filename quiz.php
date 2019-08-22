@@ -323,7 +323,7 @@ if (isset($_POST['answers'])){
             }                           echo $results;
             echo '<br /><hr>'; 
              if ($counter < 10){
-                    echo "<h2>You failed</h2>";
+                    echo "<h2>You failed &#x1F602 &#x1F602 &#x1F602</h2>";
                     echo '<br /><hr>'; 
                     echo "<video width='100%' height='240' controls>";
                     echo "<source src='images/failed.mp4'>failed.mp4 type='video/mp4'>";
@@ -331,7 +331,7 @@ if (isset($_POST['answers'])){
                     echo ""; 
                     echo "<br>"; 
                 } else {
-                    echo "<h2>Well Done</h2>";
+                    echo "<h2>Well Done &#128521 &#128521 &#128521</h2>";
                     echo '<br /><hr>'; 
                     echo "<video width='100%' height='240' controls>";
                     echo "<source src='images/passed.mp4'>passed.mp4 type='video/mp4'>";
