@@ -28,9 +28,13 @@
     <title>INFORMATION TECHNOLOGY QUIZ</title>
     
     <style>
-        body{
+        /* body{
     background-image: url("images/wide.jpg");
-  }
+  } */
+
+    /* #header{
+        background-image: url ("images/pexels-photo-169573.jpeg");
+    } */
         </style>
 </head>
 <body>
@@ -313,7 +317,7 @@ if (isset($_POST['answers'])){
             echo '<h3>You are correct: <span style="color: green;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span></h3>' ; $counter++;
 
         }
-
+               
         echo '<br /><hr>'; 
                                 if ($counter=="") 
                                 { 
@@ -325,6 +329,12 @@ if (isset($_POST['answers'])){
                                 $results = "Your score: $counter/20"; 
                                 }
             }                           echo $results;
+            echo '<br /><hr>'; 
+             if ($counter <= 10){
+                    echo "You failed";
+                } else {
+                    echo "Well Done";
+                }
 } else {  
 ?>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="quiz">
