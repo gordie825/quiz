@@ -300,6 +300,7 @@ $Questions = array(
     ),
 
 );
+$videoName;
 if (isset($_POST['answers'])){
     $Answers = $_POST['answers']; // Get submitted answers.
 
@@ -330,10 +331,22 @@ if (isset($_POST['answers'])){
                                 }
             }                           echo $results;
             echo '<br /><hr>'; 
-             if ($counter <= 10){
+             if ($counter < 10){
                     echo "You failed";
+                    echo '<br /><hr>'; 
+                    echo "<video width='100%' height='240' controls>";
+                    echo "<source src='images/failed.mp4'>failed.mp4 type='video/mp4'>";
+                    echo "</video>";    
+                    echo ""; 
+                    echo "<br>"; 
                 } else {
                     echo "Well Done";
+                    echo '<br /><hr>'; 
+                    echo "<video width='100%' height='240' controls>";
+                    echo "<source src='images/passed.mp4'>passed.mp4 type='video/mp4'>";
+                    echo "</video>";    
+                    echo ""; 
+                    echo "<br>"; 
                 }
 } else {  
 ?>
