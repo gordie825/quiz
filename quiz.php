@@ -299,7 +299,7 @@ if (isset($_POST['answers'])){
 
     foreach ($Questions as $QuestionNo => $Value){
         // Echo the question
-        echo "<h3>$Value[Question]</h3>";
+        echo "<h2>$Value[Question]</h2>";
 
         if ($Answers[$QuestionNo] != $Value['CorrectAnswer']){
              echo '<h3>You answered: <span style="color: red;">'.$Value['Answers'][$Answers[$QuestionNo]].'</span><br></h3>' ; // Replace style with a class
@@ -314,16 +314,16 @@ if (isset($_POST['answers'])){
                                 if ($counter=="") 
                                 { 
                                 $counter='0';
-                                $results = "<h3>Your score: $counter/20</h3>"; 
+                                $results = "<h2>Your score: $counter/20</h2>"; 
                                 }
                                 else 
                                 { 
-                                $results = "<h3>Your score: $counter/20</h3>"; 
+                                $results = "<h2>Your score: $counter/20</h2>"; 
                                 }
             }                           echo $results;
             echo '<br /><hr>'; 
              if ($counter < 10){
-                    echo "<h3>You failed</h3>";
+                    echo "<h2>You failed</h2>";
                     echo '<br /><hr>'; 
                     echo "<video width='100%' height='240' controls>";
                     echo "<source src='images/failed.mp4'>failed.mp4 type='video/mp4'>";
@@ -331,7 +331,7 @@ if (isset($_POST['answers'])){
                     echo ""; 
                     echo "<br>"; 
                 } else {
-                    echo "<h3>Well Done</h3>";
+                    echo "<h2>Well Done</h2>";
                     echo '<br /><hr>'; 
                     echo "<video width='100%' height='240' controls>";
                     echo "<source src='images/passed.mp4'>passed.mp4 type='video/mp4'>";
