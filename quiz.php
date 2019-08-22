@@ -20,22 +20,14 @@
   <link href="lib/hover/hover.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/pagination.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- <link href="css/pagination.css" rel="stylesheet" type="text/css"> -->
 
   <!-- Responsive css -->
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <title>INFORMATION TECHNOLOGY QUIZ</title>
     
-    <style>
-        /* body{
-    background-image: url("images/wide.jpg");
-  } */
-
-    /* #header{
-        background-image: url ("images/pexels-photo-169573.jpeg");
-    } */
-        </style>
+    
 </head>
 <body>
  <!-- start section header -->
@@ -70,8 +62,6 @@
 <script src="lib/magnific-popup/magnific-popup.min.js"></script>
 <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
-<!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
